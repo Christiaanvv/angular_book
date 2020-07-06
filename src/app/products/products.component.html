@@ -1,0 +1,12 @@
+<ul>
+  <li *ngFor="let product of products">
+    <h2>{{ product.name }}</h2>
+    <p>
+      {{ product.description }}
+    </p>
+    <app-rating [rating] = "4"></app-rating>
+    <p>
+      {{ product.price }}
+    </p>
+  </li>
+</ul>
